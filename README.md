@@ -1,20 +1,49 @@
-SCRIPT SOLFLARE  AUTO DAILY  BOT BY MRPTech
 
-1. Set Up 
 
-git clone https://github.com/VinzSenzoo/SolflareAutoBot-NTE
-cd SolflareAutoBot-NTE
+## 🔧 Installation Steps
 
-2. Install Dependencies
+Follow the steps below to install and set up **Solflare Bot** properly on your system.
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/mosibur1/solflare.git
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
+cd solflare
+```
+
+### 3️⃣ Install Dependencies
+
+Install all required packages automatically:
+
+```bash
 npm install
+```
 
-3. Enter Your Bearer Token 
+Add Token 
+
+```bash
 nano token.txt
+```
 
-4. If you want to use proxy , Enter Your Proxy
-nano proxy.txt
+### 5️⃣ (Optional) Set Up Proxy
 
-Run Bot 
+If you plan to use proxies, go to  nano proxy.txt and add your proxies in this format:
+
+```
+http://username:password@ip:port
+```
+
+Only **HTTP/HTTPS** proxies are supported.
+
+### 6️⃣ Run the Bot
+
+Finally, start the bot with:
+
+```bash
 npm start
-
-Recomended Proxy : https://www.birdproxies.com/
+```
