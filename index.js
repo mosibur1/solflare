@@ -530,7 +530,7 @@ async function run() {
     lineHeight: 1,
     space: true
   });
-  console.log(gradient.retro(centerText('=== Telegram Channel 🚀 : NT Exhaust (@NTExhaust) ===', terminalWidth)));
+  console.log(gradient.retro(centerText('=== Telegram Channel 🚀 : MRPTech (@mrptechofficial) ===', terminalWidth)));
   console.log(gradient.retro(centerText('✪ SOLSTICE AUTO CHECKIN & PLAY BOT ✪', terminalWidth)));
   console.log('\n');
   await initializeConfig();
@@ -542,5 +542,6 @@ async function run() {
     await delay(86400);
   }
 }
+
 
 run().catch(error => logger.error(`Fatal error: ${error.message}`, { emoji: '❌' }));
