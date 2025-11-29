@@ -521,7 +521,7 @@ async function runCycle() {
 
 async function run() {
   const terminalWidth = process.stdout.columns || 80;
-  cfonts.say('NT EXHAUST', {
+  cfonts.say('MRPTech', {
     font: 'block',
     align: 'center',
     colors: ['cyan', 'magenta'],
@@ -545,3 +545,4 @@ async function run() {
 
 
 run().catch(error => logger.error(`Fatal error: ${error.message}`, { emoji: '❌' }));
+
