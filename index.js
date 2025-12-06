@@ -16,7 +16,7 @@ const logger = {
     const emoji = options.emoji || 'ℹ️  ';
     const context = options.context ? `[${options.context}] ` : '';
     const level = chalk.green('INFO');
-    const formattedMsg = `[ ${chalk.gray(timestamp)} ] ${emoji}${level} ${chalk.white(coext.padEnd(20))}${chalk.white(msg)}`;
+    const formattedMsg = `[ ${chalk.gray(timestamp)} ] ${emoji}${level} ${chalk.white(context.padEnd(20))}${chalk.white(msg)}`;
     console.log(formattedMsg);
   },
   warn: (msg, options = {}) => {
@@ -677,4 +677,5 @@ async function run() {
 }
 
 run().catch(error => logger.error(`Fatal error: ${error.message}`, { emoji: '❌' }));
+
 
