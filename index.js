@@ -16,7 +16,7 @@ const logger = {
     const emoji = options.emoji || 'ℹ️  ';
     const context = options.context ? `[${options.context}] ` : '';
     const level = chalk.green('INFO');
-    const formattedMsg = `[ ${chalk.gray(timestamp)} ] ${emoji}${level} ${chalk.white(context.padEnd(20))}${chalk.white(msg)}`;
+    const formattedMsg = `[ ${chalk.gray(timestamp)} ] ${emoji}${level} ${chalk.white(coext.padEnd(20))}${chalk.white(msg)}`;
     console.log(formattedMsg);
   },
   warn: (msg, options = {}) => {
@@ -654,7 +654,7 @@ async function runCycle() {
 
 async function run() {
   const terminalWidth = process.stdout.columns || 80;
-  cfonts.say('NT EXHAUST', {
+  cfonts.say('MRPTECH', {
     font: 'block',
     align: 'center',
     colors: ['cyan', 'magenta'],
@@ -663,8 +663,8 @@ async function run() {
     lineHeight: 1,
     space: true
   });
-  console.log(gradient.retro(centerText('=== Telegram Channel 🚀 : NT Exhaust (@NTExhaust) ===', terminalWidth)));
-  console.log(gradient.retro(centerText('✪ SOLSTICE AUTO CHECKIN & PLAY BOT ✪', terminalWidth)));
+  console.log(gradient.retro(centerText('=== Telegram Channel 🚀 : MRPTech (@mrptechofficial) ===', terminalWidth)));
+  console.log(gradient.retro(centerText('✪ AUTO CHECKIN & PLAY BOT ✪', terminalWidth)));
   console.log('\n');
   await initializeConfig();
 
@@ -677,3 +677,4 @@ async function run() {
 }
 
 run().catch(error => logger.error(`Fatal error: ${error.message}`, { emoji: '❌' }));
+
